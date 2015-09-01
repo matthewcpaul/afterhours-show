@@ -1,1 +1,6 @@
-@import 'example-directory/import-me';
+@import 'vars/reset';
+@import 'vars/breakpoints';
+@import 'vars/colors';
+@import 'vars/grid';
+@import 'vars/typography';
+@import 'vars/sections';
