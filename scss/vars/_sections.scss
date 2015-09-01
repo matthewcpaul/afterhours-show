@@ -1,0 +1,58 @@
+.hero {
+  height: calc(80vh - 12rem);
+}
+.dark {
+  background-color: $black;
+}
+.light {
+  background-color: $grey;
+}
+.primary {
+  background-color: $pink;
+}
+section {
+  padding: 3rem 0;
+  background: $white;
+
+  // @include baseline;
+
+}
+.wrapper {
+  max-width: 70rem;
+  margin: 0 auto;
+  margin: 0 1.5rem;
+  border-left: 2px solid $pink;
+
+  &.no--border {
+    border: none;
+  }
+
+  &.white--border {
+    border-left: 2px solid $white;
+  }
+
+  @include breakpoint(max--width) {
+    margin: 0 auto;
+  }
+
+}
+.content {
+  // @include four--of--six;
+  // @include five--of--six;
+
+  margin-left: $margin--one;
+  padding: 1.5rem 0 7.5rem 0;
+  overflow: auto;
+
+  @include breakpoint(content--wide) {
+    // @include four--of--six;
+  }
+
+}
+.editorial {
+  @include five--of--six;
+
+  @include breakpoint(content--wide) {
+    @include two--of--six;
+  }
+}
