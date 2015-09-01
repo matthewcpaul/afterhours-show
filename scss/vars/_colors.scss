@@ -1,5 +1,20 @@
+// --------------------------------------------------
+// Color Variables
+// --------------------------------------------------
+
 $white: #ffffff;
 $black: #141416;
 $grey: #e8e8e8;
 $pink: #ee6ba6;
+
+// Color Role Classes
+.dark {
+  background-color: $black;
+}
+.light {
+  background-color: $grey;
+}
+.primary {
+  background-color: $pink;
+}
 

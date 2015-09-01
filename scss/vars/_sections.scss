@@ -1,15 +1,13 @@
+// --------------------------------------------------
+// Page Components
+// --------------------------------------------------
+
+// Hero Section
 .hero {
   height: calc(80vh - 12rem);
 }
-.dark {
-  background-color: $black;
-}
-.light {
-  background-color: $grey;
-}
-.primary {
-  background-color: $pink;
-}
+
+// Page Sections
 section {
   padding: 3rem 0;
   background: $white;
@@ -17,6 +15,8 @@ section {
   // @include baseline;
 
 }
+
+// Page Wrapper
 .wrapper {
   max-width: 70rem;
   margin: 0 auto;
@@ -34,8 +34,9 @@ section {
   @include breakpoint(max--width) {
     margin: 0 auto;
   }
-
 }
+
+// Content Sections
 .content {
   // @include four--of--six;
   // @include five--of--six;
