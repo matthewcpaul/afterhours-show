@@ -57,3 +57,20 @@ section {
     @include two--of--six;
   }
 }
+
+// Our Judges Section
+
+.judge_name,
+.judge_workplace {
+  display: block;
+}
+
+.judge_social-list {
+
+  li:first-of-type{
+    color: $pink;
+    text-transform: uppercase;
+  }
+}
+
+

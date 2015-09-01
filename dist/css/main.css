@@ -104,3 +104,10 @@ section {
       clear: none; }
       .editorial:last-child {
         margin-right: 0; } }
+
+.judge_name, .judge_workplace {
+  display: block; }
+
+.judge_social-list li:first-of-type {
+  color: #ee6ba6;
+  text-transform: uppercase; }
