@@ -35,6 +35,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.dark {
+  background-color: #141416; }
+
+.light {
+  background-color: #e8e8e8; }
+
+.primary {
+  background-color: #ee6ba6; }
+
 body {
   font-size: 16px;
   line-height: 1.5; }
@@ -59,15 +68,6 @@ h3 {
 
 .hero {
   height: calc(80vh - 12rem); }
-
-.dark {
-  background-color: #141416; }
-
-.light {
-  background-color: #e8e8e8; }
-
-.primary {
-  background-color: #ee6ba6; }
 
 section {
   padding: 3rem 0;
