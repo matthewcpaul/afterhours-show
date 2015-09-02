@@ -66,6 +66,11 @@ h3 {
   padding-top: 1rem;
   width: 5rem; }
 
+.page-wrapper {
+  max-width: 70rem;
+  margin: 0 auto;
+  margin: 0 1.5rem; }
+
 .hero {
   height: calc(80vh - 12rem); }
 
@@ -111,3 +116,9 @@ section {
 .judge_social-list li:first-of-type {
   color: #ee6ba6;
   text-transform: uppercase; }
+
+.page-footer_link-item {
+  display: inline; }
+
+.page-footer_list-item {
+  color: #141416; }
