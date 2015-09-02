@@ -2,6 +2,16 @@
 // Page Components
 // --------------------------------------------------
 
+// Layout Helpers
+//
+// These should be as modular as possible for reuse
+
+.page-wrapper{
+  max-width: 70rem;
+  margin: 0 auto;
+  margin: 0 1.5rem;
+}
+
 // Hero Section
 .hero {
   height: calc(80vh - 12rem);
@@ -60,7 +70,6 @@ section {
 
 // Our Judges Section
 
-
 .judge_name {
 
 }
@@ -77,4 +86,9 @@ section {
   }
 }
 
+// Footer
+
+.page-footer_link-item {
+  display: inline;
+}
 
