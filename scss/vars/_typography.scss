@@ -18,20 +18,25 @@
 }
 
 %body-copy {
+  font-family: 'Gentium Book Basic', serif;
   padding-bottom: 1.125rem;
   padding-top: .375rem;
 }
 
 %h2-copy {
+  font-family: 'Montserrat', sans-serif;
   font-size: 2.4375rem;
+  font-weight: 700;
   line-height: 3rem;
   padding-bottom: 2.25rem;
   padding-top: 2.25rem;
 }
 
 %h3-copy {
-  border-bottom: 2px solid $pink;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.5625rem;
+  font-weight: 700;
+  border-bottom: 2px solid $pink;
   line-height: 3rem;
   padding-bottom: calc(.5rem - 2px);
   padding-top: 1rem;
@@ -55,3 +60,11 @@ h3 {
   @extend %h3-copy;
 }
 
+// Modular Type Classes
+.section-header {
+  @extend %h2-copy;
+}
+
+.section-number {
+  @extend %h3-copy;
+}
