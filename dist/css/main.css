@@ -35,31 +35,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-body {
-  font-size: 16px;
-  line-height: 1.5; }
-
-p {
-  padding-top: .375rem;
-  padding-bottom: 1.125rem; }
-
-h2 {
-  font-size: 2.4375rem;
-  line-height: 3rem;
-  padding-top: 2.25rem;
-  padding-bottom: 2.25rem; }
-
-h3 {
-  font-size: 1.5625rem;
-  line-height: 3rem;
-  padding-top: 1rem;
-  padding-bottom: calc(.5rem - 2px);
-  width: 5rem;
-  border-bottom: 2px solid #ee6ba6; }
-
-.hero {
-  height: calc(80vh - 12rem); }
-
 .dark {
   background-color: #141416; }
 
@@ -68,6 +43,31 @@ h3 {
 
 .primary {
   background-color: #ee6ba6; }
+
+body {
+  font-size: 16px;
+  line-height: 1.5; }
+
+p {
+  padding-bottom: 1.125rem;
+  padding-top: .375rem; }
+
+h2 {
+  font-size: 2.4375rem;
+  line-height: 3rem;
+  padding-bottom: 2.25rem;
+  padding-top: 2.25rem; }
+
+h3 {
+  border-bottom: 2px solid #ee6ba6;
+  font-size: 1.5625rem;
+  line-height: 3rem;
+  padding-bottom: calc(.5rem - 2px);
+  padding-top: 1rem;
+  width: 5rem; }
+
+.hero {
+  height: calc(80vh - 12rem); }
 
 section {
   padding: 3rem 0;
@@ -104,3 +104,10 @@ section {
       clear: none; }
       .editorial:last-child {
         margin-right: 0; } }
+
+.judge_workplace {
+  display: block; }
+
+.judge_social-list li:first-of-type {
+  color: #ee6ba6;
+  text-transform: uppercase; }

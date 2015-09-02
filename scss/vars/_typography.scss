@@ -10,26 +10,48 @@
   background-position: (0px -1px);
 }
 
-// Base Type Styles
-body {
+// Typographic Placeholders
+
+%base-type {
   font-size: 16px;
   line-height: 1.5;
 }
-p {
-  padding-top: .375rem;
+
+%body-copy {
   padding-bottom: 1.125rem;
+  padding-top: .375rem;
 }
-h2 {
+
+%h2-copy {
   font-size: 2.4375rem;
   line-height: 3rem;
-  padding-top: 2.25rem;
   padding-bottom: 2.25rem;
+  padding-top: 2.25rem;
 }
-h3 {
+
+%h3-copy {
+  border-bottom: 2px solid $pink;
   font-size: 1.5625rem;
   line-height: 3rem;
-  padding-top: 1rem;
   padding-bottom: calc(.5rem - 2px);
+  padding-top: 1rem;
   width: 5rem;
-  border-bottom: 2px solid $pink;
 }
+
+// Base Type Styles
+body {
+  @extend %base-type;
+}
+
+p {
+  @extend %body-copy;
+}
+
+h2 {
+  @extend %h2-copy;
+}
+
+h3 {
+  @extend %h3-copy;
+}
+
