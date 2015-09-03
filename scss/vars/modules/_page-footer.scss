@@ -1,7 +1,19 @@
 // --------------------------------------------------
 // Module: Page Footer
-// --------------------------------------------------
+// -------------------------------------------------
+.page-footer {
+	padding: 1.5rem 0;
+}
 
 .page-footer_list-item {
+	display: inline;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
   color: $black;
 }
+
+.page-footer_link {
+	@extend %base-anchor;
+}
+
+
