@@ -106,7 +106,12 @@ h3, .judge_name {
   padding: 1.5rem 0 7.5rem 0;
   overflow: auto;
   padding-left: 6%;
-  border-left: 2px solid #ee6ba6; }
+  border-left: 2px solid #ee6ba6;
+  background-image: -webkit-linear-gradient(top, #0ff 0, rgba(255, 255, 255, 0) 1px);
+  background-image: linear-gradient(to bottom, #0ff 0, rgba(255, 255, 255, 0) 1px);
+  background-repeat: repeat-y;
+  background-size: 100% 1.5rem;
+  background-position: 0px -1px; }
   @media only screen and (min-width: 73rem) {
     .section-content {
       padding-left: 10rem; } }
