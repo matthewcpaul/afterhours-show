@@ -64,21 +64,34 @@ h2, .section-header {
   font-size: 2.4375rem;
   font-weight: 700;
   line-height: 3rem;
-  padding-bottom: 2.25rem;
-  padding-top: 2.25rem; }
+  padding-bottom: 2.375rem;
+  padding-top: 2.125rem; }
 
-h3, .section-number {
+h3 section-number, .section-number {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.25rem;
-  font-weight: 700;
-  color: #ee6ba6;
+  font-weight: 400;
   border-bottom: 2px solid #ee6ba6;
   line-height: 3rem;
-  padding-bottom: calc(.5rem - 2px);
+  padding-bottom: calc(.5rem - 3px);
   padding-top: 1rem;
-  width: 5rem; }
+  width: 5rem;
+  color: #ee6ba6; }
 
-.judge_social-list .judge_social-link, .page-footer_link {
+h3, .judge_name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.5625rem;
+  line-height: 1.5rem;
+  padding-bottom: 0;
+  padding-top: 1.7rem; }
+
+.judge_social-list li:first-of-type {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .875rem;
+  color: #ee6ba6; }
+
+.page-footer_link, .judge_social-list .judge_social-link {
   color: #141416;
   text-decoration: none; }
 
@@ -93,12 +106,7 @@ h3, .section-number {
   padding: 1.5rem 0 7.5rem 0;
   overflow: auto;
   padding-left: 6%;
-  border-left: 2px solid #ee6ba6;
-  background-image: -webkit-linear-gradient(top, #0ff 0, rgba(255, 255, 255, 0) 1px);
-  background-image: linear-gradient(to bottom, #0ff 0, rgba(255, 255, 255, 0) 1px);
-  background-repeat: repeat-y;
-  background-size: 100% 1.5rem;
-  background-position: 0px -1px; }
+  border-left: 2px solid #ee6ba6; }
   @media only screen and (min-width: 73rem) {
     .section-content {
       padding-left: 10rem; } }
@@ -153,59 +161,6 @@ section {
     .editorial:last-child {
       margin-right: 0; } }
 
-.judge_picture {
-  display: block;
-  width: 100%;
-  max-width: 100%; }
-
-.judge_name {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 1.563rem; }
-
-.judge_workplace {
-  display: block; }
-
-.judge_workplace {
-  font-family: 'Gentium Book Basic', serif;
-  font-size: 1.25; }
-
-.judge_list {
-  display: -webkit-flex;
-  /* Safari */
-  -webkit-flex-wrap: wrap;
-  /* Safari 6.1+ */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch; }
-
-.judge_list-item {
-  width: 48%; }
-  @media screen and (min-width: 650px) {
-    .judge_list-item {
-      width: 23%; } }
-
-.judge_social-list {
-  margin-bottom: .5rem; }
-  .judge_social-list li:first-of-type {
-    color: #ee6ba6;
-    font-family: 'Montserrat', sans-serif;
-    font-size: .875rem;
-    text-transform: uppercase; }
-  .judge_social-list .judge_social-link {
-    font-family: 'Gentium Book Basic', serif; }
-
 .partners-list {
   display: -webkit-flex;
   /* Safari */
@@ -245,3 +200,53 @@ section {
   font-weight: 700;
   color: #141416; }
 
+.judge_picture {
+  display: block;
+  width: 100%;
+  max-width: 100%; }
+
+.judge_name {
+  display: block; }
+
+.judge_workplace {
+  display: block; }
+
+.judge_workplace {
+  font-family: 'Gentium Book Basic', serif;
+  font-size: 1.25; }
+
+.judge_list {
+  display: -webkit-flex;
+  /* Safari */
+  -webkit-flex-wrap: wrap;
+  /* Safari 6.1+ */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+
+.judge_list-item {
+  width: 48%; }
+  @media screen and (min-width: 650px) {
+    .judge_list-item {
+      width: 23%; } }
+
+.judge_social-list {
+  margin-bottom: .75rem;
+  position: relative;
+  top: -4px; }
+  .judge_social-list li:first-of-type {
+    text-transform: uppercase; }
+  .judge_social-list .judge_social-link {
+    font-family: 'Gentium Book Basic', serif;
+    padding-top: .5rem; }

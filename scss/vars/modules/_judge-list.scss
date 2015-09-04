@@ -1,0 +1,59 @@
+// --------------------------------------------------
+// Module: Judge List
+// -------------------------------------------------
+
+.judge_picture {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  // padding-bottom: 1.35rem;
+}
+
+.judge_name {
+  @extend %ms1;
+
+  display: block;
+}
+
+.judge_workplace {
+  display: block;
+}
+
+.judge_workplace {
+  font-family: 'Gentium Book Basic', serif;
+  font-size: 1.25;
+}
+
+.judge_list {
+  display: -webkit-flex; /* Safari */
+  -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+  display: flex;   
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.judge_list-item {
+  width: 48%;
+
+  @media screen and (min-width: 650px){
+    width: 23%;
+  }
+}
+
+.judge_social-list {
+    margin-bottom: .75rem;
+    position: relative;
+    top: -4px;
+
+  li:first-of-type {
+    @extend %ms-1;
+    text-transform: uppercase;
+  }
+
+  .judge_social-link {
+    @extend %base-anchor;
+    font-family: 'Gentium Book Basic', serif;
+    padding-top: .5rem;
+  }
+}

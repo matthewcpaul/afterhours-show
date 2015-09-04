@@ -28,20 +28,33 @@
   font-size: 2.4375rem;
   font-weight: 700;
   line-height: 3rem;
-  padding-bottom: 2.25rem;
-  padding-top: 2.25rem;
+  padding-bottom: 2.375rem;
+  padding-top: 2.125rem;
 }
 
 %h3-copy {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.25rem;
-  font-weight: 700;
-  color: $pink;
+  font-weight: 400;
   border-bottom: 2px solid $pink;
   line-height: 3rem;
-  padding-bottom: calc(.5rem - 2px);
+  padding-bottom: calc(.5rem - 3px);
   padding-top: 1rem;
   width: 5rem;
+  color: $pink;
+}
+%ms1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.5625rem;
+  line-height: 1.5rem;
+  padding-bottom: 0;
+  padding-top: 1.7rem;
+}
+%ms-1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .875rem;
+  color: $pink;
 }
 
 %base-anchor {
@@ -63,7 +76,11 @@ h2 {
 }
 
 h3 {
-  @extend %h3-copy;
+  @extend %ms1;
+
+  & section-number {
+    @extend %h3-copy;
+  }
 }
 
 // Modular Type Classes
