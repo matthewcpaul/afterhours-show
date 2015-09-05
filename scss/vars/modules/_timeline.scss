@@ -1,0 +1,65 @@
+// --------------------------------------------------
+// Module: Timeline
+// -------------------------------------------------
+
+// Placeholders
+
+%css-circle {
+  content: "";
+  position: absolute;
+  left: -13px;
+  bottom: -38px;
+  border: 2px solid $pink;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+}
+
+%time {
+  @extend %ms0-sans;
+  position: relative;
+  left: -17px;
+
+  @include breakpoint(content--wide) {
+    font-size: 1.25rem;
+    left: -23px;
+  }
+}
+
+// Timeline Styles
+
+.section_01 {
+  .page-wrapper {
+    &::before {
+      @extend %time;
+      content: "5 PM";
+      top: -10px;
+    }
+  }
+}
+
+.page-wrapper {
+  position: relative;
+  &::after {
+    @extend %css-circle;
+  }
+}
+
+.section_05 {
+  .page-wrapper {
+    position: relative;
+    &::after {
+      @extend %time;
+      content: "9 AM";
+      bottom: -10px;
+    }
+  }
+}
+
+.section_05, .page-footer {
+  .page-wrapper {
+    &::after {
+      border: none;
+    }
+  }
+}
