@@ -100,11 +100,23 @@ h3, .judge_name {
 
 .page-footer_link, .judge_social-list .judge_social-link {
   color: #141416;
-  text-decoration: none; }
+  text-decoration: underline; }
 
 .judge_social-list .judge_social-link:hover {
   color: #ee6ba6;
   text-decoration: underline; }
+
+::-moz-selection {
+  background: #ee6ba6;
+  color: white; }
+
+::selection {
+  background: #ee6ba6;
+  color: white; }
+
+::-moz-selection {
+  background: #ee6ba6;
+  color: white; }
 
 .section-number {
   border-bottom: 2px solid #ee6ba6;
