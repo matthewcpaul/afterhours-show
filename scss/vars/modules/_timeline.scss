@@ -13,6 +13,7 @@
   border-radius: 50%;
   width: 24px;
   height: 24px;
+  z-index: 1;
 }
 
 %time {
@@ -20,7 +21,7 @@
   position: relative;
   left: -17px;
 
-  @include breakpoint(content--wide) {
+  @include breakpoint(tight) {
     font-size: 1.25rem;
     left: -23px;
   }
@@ -56,7 +57,7 @@
   }
 }
 
-.section_05, .page-footer {
+.nav-main, .section_05, .page-footer {
   .page-wrapper {
     &::after {
       border: none;
