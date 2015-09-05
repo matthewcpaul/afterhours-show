@@ -35,15 +35,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.dark {
-  background-color: #141416; }
-
-.light {
-  background-color: #f5f5f5; }
-
-.primary {
-  background-color: #ee6ba6; }
-
 .grey-section {
   background-color: #f5f5f5; }
 
@@ -150,21 +141,22 @@ body {
     color: #ffffff;
     border-bottom: 2px solid #ffffff; }
 
-.hero {
-  height: calc(100vh - 12rem); }
-
 section {
   padding: 1.5rem 0;
   background: #ffffff; }
 
-@media only screen and (min-width: 46rem) {
-  .editorial {
-    width: 47%;
-    margin-right: 4%;
-    float: left;
-    clear: none; }
-    .editorial:last-child {
-      margin-right: 0; } }
+.editorial {
+  width: 100%;
+  float: left;
+  clear: both; }
+  @media only screen and (min-width: 46rem) {
+    .editorial {
+      width: 47%;
+      margin-right: 4%;
+      float: left;
+      clear: none; }
+      .editorial:nth-child(even) {
+        margin-right: 0; } }
 
 .partners-list {
   display: -webkit-flex;
@@ -189,6 +181,17 @@ section {
 .partner-logo {
   width: 100%;
   max-width: 100%; }
+
+.hero {
+  position: relative;
+  background: #141416;
+  height: calc(100vh - 5rem);
+  padding: 0; }
+
+.nav-main {
+  width: 100%;
+  background: #141416;
+  height: 5rem; }
 
 .page-footer {
   padding: 1.5rem 0; }
