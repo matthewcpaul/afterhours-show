@@ -70,7 +70,7 @@
 
 %base-anchor {
   color: $black;
-  text-decoration: none;
+  text-decoration: underline;
 }
 %base-hover {
   color: $pink;
@@ -96,6 +96,15 @@ h3 {
   & section-number {
     @extend %ms1;
   }
+}
+
+::selection {
+  background: $pink;
+  color: white;
+}
+::-moz-selection {
+  background: $pink;
+  color: white;
 }
 
 // Modular Type Classes
