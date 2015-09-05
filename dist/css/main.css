@@ -55,12 +55,12 @@ body {
   line-height: 1.5; }
 
 p {
-  font-family: 'Gentium Book Basic', serif;
+  font-family: 'Gentium Book Basic', Georgia, serif;
   padding-bottom: 1.125rem;
   padding-top: .375rem; }
 
 h2, .section-header {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Helvetica, sans-serif;
   font-size: 2.4375rem;
   font-weight: 700;
   line-height: 3rem;
@@ -68,12 +68,12 @@ h2, .section-header {
   padding-top: 2.125rem; }
 
 .judge_social-list li:first-of-type {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Helvetica, sans-serif;
   font-size: .875rem;
   color: #ee6ba6; }
 
 .section_01 .page-wrapper::before, .section_05 .page-wrapper::after {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 3rem;
@@ -82,7 +82,7 @@ h2, .section-header {
   color: #ee6ba6; }
 
 h3 section-number, .section-number {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Helvetica, sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 3rem;
@@ -91,7 +91,7 @@ h3 section-number, .section-number {
   color: #ee6ba6; }
 
 h3, .judge_name {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Helvetica, sans-serif;
   font-weight: 700;
   font-size: 1.5625rem;
   line-height: 1.5rem;
@@ -105,6 +105,10 @@ h3, .judge_name {
 .judge_social-list .judge_social-link:hover {
   color: #ee6ba6;
   text-decoration: underline; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 ::-moz-selection {
   background: #ee6ba6;
