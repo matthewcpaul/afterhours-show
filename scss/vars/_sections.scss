@@ -41,11 +41,6 @@
   }
 }
 
-// HERO SECTION
-.hero {
-  height: calc(100vh - 12rem);
-}
-
 // PAGE SECTIONS
 section {
   padding: 1.5rem 0;
@@ -90,7 +85,9 @@ section {
 // }
 
 .editorial {
-  // @include five--of--six;
+  width: 100%;
+  float: left;
+  clear: both;
 
   @include breakpoint(content--wide) {
     @include two--of--six;

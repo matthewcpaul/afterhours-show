@@ -12,7 +12,7 @@
   float: left;
   clear: none;
 
-  &:last-child {
+  &:nth-child(even) {
     margin-right: 0;
   }
 }
