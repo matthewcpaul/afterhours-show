@@ -1,0 +1,19 @@
+// --------------------------------------------------
+// Module: Page Header
+// -------------------------------------------------
+
+.hero {
+  position: relative;
+  background: $black;
+  // background-image: url("../img/HeroBackground.jpg");
+  // background-size: cover;
+  // background-position: center;
+  height: calc(100vh - 5rem);
+  padding: 0;
+}
+
+.nav-main {
+  width: 100%;
+  background: $black;
+  height: 5rem;
+}
