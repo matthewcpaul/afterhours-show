@@ -94,12 +94,12 @@
 
 // HERO SECTION
 .hero {
-  height: calc(80vh - 12rem);
+  height: calc(100vh - 12rem);
 }
 
 // PAGE SECTIONS
 section {
-  padding: 3rem 0;
+  padding: 1.5rem 0;
   background: $white;
 
   // @include baseline;
@@ -151,11 +151,10 @@ section {
 // OUR PARTNERS SECTION
 .partners-list {
   display: -webkit-flex; /* Safari */
+  display: box;   /* Safari and Chrome iOS (Old)*/
   -webkit-flex-wrap: wrap; /* Safari 6.1+ */
-  display: flex;   
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: stretch;
 }
 
 .partners-list_list-item {

@@ -26,11 +26,10 @@
 
 .judge_list {
   display: -webkit-flex; /* Safari */
+  display: box;   /* Safari and Chrome iOS (Old)*/
   -webkit-flex-wrap: wrap; /* Safari 6.1+ */
-  display: flex;   
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: stretch;
 }
 
 .judge_list-item {
