@@ -28,22 +28,38 @@
   font-size: 2.4375rem;
   font-weight: 700;
   line-height: 3rem;
-  padding-bottom: 2.375rem;
+  padding-bottom: 2.5rem;
   padding-top: 2.125rem;
 }
 
-%h3-copy {
+%ms-1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.25rem;
+  font-size: .875rem;
+  color: $pink;
+}
+
+%ms0-sans {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
   font-weight: 400;
-  border-bottom: 2px solid $pink;
   line-height: 3rem;
   padding-bottom: calc(.5rem - 3px);
   padding-top: 1rem;
-  width: 5rem;
+  color: $pink;
+
+}
+
+%ms1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 3rem;
+  padding-bottom: calc(.5rem - 3px);
+  padding-top: 1rem;
   color: $pink;
 }
-%ms1 {
+
+%ms2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 1.5625rem;
@@ -51,15 +67,14 @@
   padding-bottom: 0;
   padding-top: 1.7rem;
 }
-%ms-1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: .875rem;
-  color: $pink;
-}
 
 %base-anchor {
   color: $black;
   text-decoration: none;
+}
+%base-hover {
+  color: $pink;
+  text-decoration: underline;
 }
 
 // Base Type Styles
@@ -76,10 +91,10 @@ h2 {
 }
 
 h3 {
-  @extend %ms1;
+  @extend %ms2;
 
   & section-number {
-    @extend %h3-copy;
+    @extend %ms1;
   }
 }
 
@@ -89,5 +104,7 @@ h3 {
 }
 
 .section-number {
-  @extend %h3-copy;
+  @extend %ms1;
+  border-bottom: 2px solid $pink;
+  width: 5rem;
 }

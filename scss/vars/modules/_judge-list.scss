@@ -6,11 +6,12 @@
   display: block;
   width: 100%;
   max-width: 100%;
+  margin-top: -2px;
   // padding-bottom: 1.35rem;
 }
 
 .judge_name {
-  @extend %ms1;
+  @extend %ms2;
 
   display: block;
 }
@@ -22,6 +23,8 @@
 .judge_workplace {
   font-family: 'Gentium Book Basic', serif;
   font-size: 1.25;
+  padding-top: .3rem;
+  padding-bottom: 1rem;
 }
 
 .judge_list {
@@ -48,11 +51,15 @@
   li:first-of-type {
     @extend %ms-1;
     text-transform: uppercase;
+    padding-bottom: .125rem;
   }
 
   .judge_social-link {
     @extend %base-anchor;
     font-family: 'Gentium Book Basic', serif;
     padding-top: .5rem;
+    &:hover {
+      @extend %base-hover;
+    }
   }
 }

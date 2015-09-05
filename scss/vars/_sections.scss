@@ -17,78 +17,27 @@
   }
 }
 
+// PAGE SECTIONS
 .section-content {
-  padding: 1.5rem 0 7.5rem 0;
+  padding: 1.5rem 0 2rem 6%;
   overflow: auto;
-
-  padding-left: 6%;
   border-left: 2px solid $pink;
 
-  // padding: 3rem 0;
-  // margin-left: $margin--one;
-
-  // @include breakpoint(content--wide) {
-  //   // @include four--of--six;
-  // }
+  @include breakpoint(content--wide) {
+    padding: 1.5rem 0 7.5rem 6%;
+  }
 
   @include breakpoint(max--width) {
     padding-left: 10rem;
   }
-
   // @include baseline;
 }
-
-// PAGE SECTIONS
-.section_01 {
-  .page-wrapper::before {
-    color: $pink;
-    content: "5 PM";
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    left: -13px;
-    position: relative;
-    top: -10px;
-
-    @include breakpoint(content--wide) {
-      font-size: 1.25rem;
-      left: -23px;
-    }
-  } 
-}
-
-.section_02 {
-
-}
-
-.section_03 {
-
-}
-
 .section_04 {
    color: $white;
 
   .section-number {
     color: $white;
     border-bottom: 2px solid $white;
-  }
-}
-
-.section_05 {
-  .page-wrapper::after {
-    bottom: -10px;
-    color: $pink;
-    content: "9 AM";
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    left: 8px;
-    position: relative;
-
-    @include breakpoint(content--wide) {
-      font-size: 1.25rem;
-      left: -23px;
-    }
   }
 }
 
