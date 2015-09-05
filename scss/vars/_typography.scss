@@ -18,13 +18,13 @@
 }
 
 %body-copy {
-  font-family: 'Gentium Book Basic', serif;
+  font-family: 'Gentium Book Basic', Georgia, serif;
   padding-bottom: 1.125rem;
   padding-top: .375rem;
 }
 
 %h2-copy {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Helvetica, sans-serif;
   font-size: 2.4375rem;
   font-weight: 700;
   line-height: 3rem;
@@ -33,13 +33,13 @@
 }
 
 %ms-1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Helvetica, sans-serif;
   font-size: .875rem;
   color: $pink;
 }
 
 %ms0-sans {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 3rem;
@@ -50,7 +50,7 @@
 }
 
 %ms1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Helvetica, sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 3rem;
@@ -60,7 +60,7 @@
 }
 
 %ms2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Helvetica, sans-serif;
   font-weight: 700;
   font-size: 1.5625rem;
   line-height: 1.5rem;
@@ -80,6 +80,8 @@
 // Base Type Styles
 body {
   @extend %base-type;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 p {
