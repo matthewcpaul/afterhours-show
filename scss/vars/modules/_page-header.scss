@@ -5,15 +5,100 @@
 .hero {
   position: relative;
   background: $black;
-  // background-image: url("../img/HeroBackground.jpg");
-  // background-size: cover;
-  // background-position: center;
-  height: calc(100vh - 5rem);
+  background-image: url("../img/HeroBackground.jpg");
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 10rem);
   padding: 0;
 }
 
 .nav-main {
+  position: relative;
   width: 100%;
   background: $black;
-  height: 5rem;
+  height: 4.5rem;
+  text-align: center;
+  @include breakpoint(tight) {
+      text-align: left;
+    }
+
+  & ul {
+    display: block;
+    float: left;
+    clear: none;
+
+    @include breakpoint(tight) {
+      padding-left: 6%;
+    }
+
+    @include breakpoint(wide) {
+      padding-left: calc(9rem + 4px);
+    }
+
+    &:last-child {
+      float: left;
+      padding-left: 2rem;
+
+      @include breakpoint(tight) {
+        float: right;
+        padding-left: 0;
+        padding-right: 6%;
+      }
+
+      @include breakpoint(wide) {
+        padding-right: calc(9rem + 4px);
+      }
+    }
+
+    & li {
+      display: block;
+      float: left;
+      margin-left: 2rem;
+
+      @include breakpoint(tight) {
+        margin-left: 3rem;
+      }
+      @include breakpoint(wide) {
+        margin-left: 5rem;
+      }
+      @include breakpoint(max-width) {
+        margin-left: 7rem;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      & a {
+        @extend %nav-anchor;
+      }
+
+      &.active a {
+        color: $grey;
+      }
+    }
+  }
+}
+.nav-wrapper {
+  display:inline-block;
+  margin: 0 auto;
+  @include breakpoint(tight) {
+    display: block;
+    margin: 0;
+  }
+}
+.sticky {
+
+    @include breakpoint(wide) {
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 500;
+    }
+}
+.nav-offset {
+  margin-top: 0;
+  @include breakpoint(wide) {
+      margin-top: 4.5rem;
+    }
 }
