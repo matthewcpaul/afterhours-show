@@ -141,7 +141,7 @@ body {
   @media only screen and (min-width: 46rem) {
     .section-content {
       padding: 1.5rem 0 7.5rem 6%; } }
-  @media only screen and (min-width: 64rem) {
+  @media only screen and (min-width: 64.5rem) {
     .section-content {
       padding: 1.5rem 9rem 7.5rem 9rem; } }
   @media only screen and (min-width: 84rem) {
@@ -225,7 +225,7 @@ section {
     @media only screen and (min-width: 46rem) {
       .nav-main ul {
         padding-left: 6%; } }
-    @media only screen and (min-width: 64rem) {
+    @media only screen and (min-width: 64.5rem) {
       .nav-main ul {
         padding-left: calc(9rem + 4px); } }
     .nav-main ul:last-child {
@@ -236,7 +236,7 @@ section {
           float: right;
           padding-left: 0;
           padding-right: 6%; } }
-      @media only screen and (min-width: 64rem) {
+      @media only screen and (min-width: 64.5rem) {
         .nav-main ul:last-child {
           padding-right: calc(9rem + 4px); } }
     .nav-main ul li {
@@ -246,7 +246,7 @@ section {
       @media only screen and (min-width: 46rem) {
         .nav-main ul li {
           margin-left: 3rem; } }
-      @media only screen and (min-width: 64rem) {
+      @media only screen and (min-width: 64.5rem) {
         .nav-main ul li {
           margin-left: 5rem; } }
       @media only screen and (min-width: 84rem) {
@@ -265,7 +265,7 @@ section {
       display: block;
       margin: 0; } }
 
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 64.5rem) {
   .sticky {
     position: fixed;
     left: 0;
@@ -274,7 +274,7 @@ section {
 
 .nav-offset {
   margin-top: 0; }
-  @media only screen and (min-width: 64rem) {
+  @media only screen and (min-width: 64.5rem) {
     .nav-offset {
       margin-top: 4.5rem; } }
 
