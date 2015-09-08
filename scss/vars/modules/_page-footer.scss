@@ -2,18 +2,31 @@
 // Module: Page Footer
 // -------------------------------------------------
 .page-footer {
+	background-color: $white;
 	padding: 1.5rem 0;
+
+	.page-wrapper::after {
+    width: 0;
+    height: 0;
+	}
 }
 
 .page-footer_list-item {
-	display: inline;
+	display: block;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
   color: $black;
+  padding: .5rem 0;
+
+  @include breakpoint(tight) {
+    display: inline;
+    margin-right: 6rem;
+  }
 }
 
 .page-footer_link {
 	@extend %base-anchor;
 }
+
 
 
