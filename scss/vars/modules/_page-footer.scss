@@ -2,7 +2,13 @@
 // Module: Page Footer
 // -------------------------------------------------
 .page-footer {
+	background-color: $white;
 	padding: 1.5rem 0;
+
+	.page-wrapper::after {
+    width: 0;
+    height: 0;
+	}
 }
 
 .page-footer_list-item {
@@ -15,5 +21,6 @@
 .page-footer_link {
 	@extend %base-anchor;
 }
+
 
 
