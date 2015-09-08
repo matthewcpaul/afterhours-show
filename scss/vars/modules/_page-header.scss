@@ -82,6 +82,7 @@
 .nav-wrapper {
   display:inline-block;
   margin: 0 auto;
+  text-align: center; 
   @include breakpoint(tight) {
     display: block;
     margin: 0;
@@ -101,4 +102,17 @@
   @include breakpoint(wide) {
       margin-top: 4.5rem;
     }
+}
+
+.nav-secondary-logo {
+  width: 0;
+  opacity: 0;
+  @include breakpoint(tight) {
+    max-width: 100px;
+    opacity: 1;
+    position: relative;
+    top: 21px;
+    width: 100%;
+    z-index: 1000;
+  }
 }
