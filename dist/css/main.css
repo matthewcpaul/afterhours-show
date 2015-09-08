@@ -287,7 +287,8 @@ section {
 
 .nav-wrapper {
   display: inline-block;
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: center; }
   @media only screen and (min-width: 46rem) {
     .nav-wrapper {
       display: block;
@@ -305,6 +306,18 @@ section {
   @media only screen and (min-width: 64.5rem) {
     .nav-offset {
       margin-top: 4.5rem; } }
+
+.nav-secondary-logo {
+  width: 0;
+  opacity: 0; }
+  @media only screen and (min-width: 46rem) {
+    .nav-secondary-logo {
+      max-width: 100px;
+      opacity: 1;
+      position: relative;
+      top: 21px;
+      width: 100%;
+      z-index: 1000; } }
 
 .page-footer {
   background-color: #ffffff;
