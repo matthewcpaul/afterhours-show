@@ -188,17 +188,19 @@ section {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .partners-list_list-item {
-  width: 100%; }
+  display: block;
+  width: 48%;
+  padding: 1rem 0; }
   @media screen and (min-width: 425px) {
     .partners-list_list-item {
-      width: 32%; } }
-
-.partner-logo {
-  width: 100%;
-  max-width: 100%; }
+      max-width: 28%; } }
 
 .hero {
   position: relative;
