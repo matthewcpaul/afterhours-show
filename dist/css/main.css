@@ -286,10 +286,13 @@ section {
     height: 0; }
 
 .page-footer_list-item {
-  display: inline;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #141416; }
+  @media only screen and (min-width: 46rem) {
+    .page-footer_list-item {
+      display: inline;
+      margin-right: 6rem; } }
 
 .judge_picture {
   display: block;

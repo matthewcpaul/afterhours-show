@@ -12,10 +12,14 @@
 }
 
 .page-footer_list-item {
-	display: inline;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
   color: $black;
+
+  @include breakpoint(tight) {
+    display: inline;
+    margin-right: 6rem;
+  }
 }
 
 .page-footer_link {
