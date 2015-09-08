@@ -286,9 +286,11 @@ section {
     height: 0; }
 
 .page-footer_list-item {
+  display: block;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  color: #141416; }
+  color: #141416;
+  padding: .5rem 0; }
   @media only screen and (min-width: 46rem) {
     .page-footer_list-item {
       display: inline;

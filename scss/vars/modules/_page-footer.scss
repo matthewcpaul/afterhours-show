@@ -12,9 +12,11 @@
 }
 
 .page-footer_list-item {
+	display: block;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
   color: $black;
+  padding: .5rem 0;
 
   @include breakpoint(tight) {
     display: inline;
