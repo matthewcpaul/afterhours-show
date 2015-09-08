@@ -279,7 +279,11 @@ section {
       margin-top: 4.5rem; } }
 
 .page-footer {
+  background-color: #ffffff;
   padding: 1.5rem 0; }
+  .page-footer .page-wrapper::after {
+    width: 0;
+    height: 0; }
 
 .page-footer_list-item {
   display: inline;
