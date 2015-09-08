@@ -195,7 +195,9 @@ section {
           align-items: center; }
 
 .partners-list_list-item {
-  width: 100%; }
+  display: block;
+  width: 48%;
+  padding: 1rem 0; }
   @media screen and (min-width: 425px) {
     .partners-list_list-item {
       max-width: 28%; } }
