@@ -26,6 +26,7 @@
 
 .page-footer_link {
 	@extend %base-anchor;
+	text-decoration: none;
 }
 
 

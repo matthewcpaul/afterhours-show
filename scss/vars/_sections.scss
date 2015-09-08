@@ -41,6 +41,10 @@
 .section_04 {
    color: $white;
 
+  .section-content {
+    border-left: 2px solid $white;
+  }
+
   .section-number {
     color: $white;
     border-bottom: 2px solid $white;
@@ -130,4 +134,9 @@ section {
   // width: 100%;
   // max-height: 30px;
   // max-width: 100%;
+}
+
+.button-right {
+  float: right;
+  margin-right: 0;
 }

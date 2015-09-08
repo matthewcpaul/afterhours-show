@@ -85,9 +85,25 @@
   color: $black;
   text-decoration: underline;
 }
+
 %base-hover {
   color: $pink;
   text-decoration: underline;
+}
+
+%button-style {
+  -webkit-appearance:none;
+  background-color: transparent;
+  border: 1px solid $white;
+  color: $white;
+  display: block;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-size: 1.25rem;
+  margin-top: 1.375rem;
+  max-width: 14rem;
+  padding: .5rem 1rem;
+  text-align: center;
+  text-decoration: none;
 }
 
 // Base Type Styles
@@ -131,4 +147,14 @@ h3 {
   @extend %ms1;
   border-bottom: 2px solid $pink;
   width: 5rem;
+}
+
+.editorial-button {
+  @extend %button-style;
+  margin-bottom: 1.125rem;
+
+  &:hover {
+    background-color: $white;
+    color: $pink;
+  }
 }
