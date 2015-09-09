@@ -112,11 +112,24 @@ section {
 
 // OUR PARTNERS SECTION
 .partners-list {
-  display: -webkit-flex; /* Safari */
-  display: box;   /* Safari and Chrome iOS (Old)*/
-  -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-direction: row;
+  flex-direction: row;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
