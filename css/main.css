@@ -251,7 +251,6 @@ section {
 .hero {
   position: relative;
   background: #141416;
-  background-image: url("../img/HeroBackground.jpg");
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
