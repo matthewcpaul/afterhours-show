@@ -401,6 +401,15 @@ section {
 .page-footer_link {
   text-decoration: none; }
 
+.footer-wrapper {
+  padding-left: 6%; }
+  @media only screen and (min-width: 64.5rem) {
+    .footer-wrapper {
+      padding-left: 9rem; } }
+  @media only screen and (min-width: 84rem) {
+    .footer-wrapper {
+      padding-left: 9rem; } }
+
 .judge_picture {
   display: block;
   width: 100%;

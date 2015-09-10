@@ -29,5 +29,17 @@
 	text-decoration: none;
 }
 
+.footer-wrapper {
+  padding-left: 6%;
+
+  @include breakpoint(wide) {
+    padding-left: 9rem;
+  }
+
+  @include breakpoint(max-width) {
+    padding-left: 9rem;
+  }
+}
+
 
 
