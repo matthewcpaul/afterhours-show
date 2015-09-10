@@ -65,41 +65,6 @@ section {
   // @include baseline;
 }
 
-// // Page Wrapper
-// .wrapper {
-//   max-width: 70rem;
-//   margin: 0 auto;
-//   margin: 0 1.5rem;
-//   border-left: 2px solid $pink;
-
-//   &.no--border {
-//     border: none;
-//   }
-
-//   &.white--border {
-//     border-left: 2px solid $white;
-//   }
-
-//   @include breakpoint(max--width) {
-//     margin: 0 auto;
-//   }
-// }
-
-// Content Sections
-// .content {
-//   // @include four--of--six;
-//   // @include five--of--six;
-
-//   margin-left: $margin--one;
-//   padding: 1.5rem 0 7.5rem 0;
-//   overflow: auto;
-
-//   @include breakpoint(content--wide) {
-//     // @include four--of--six;
-//   }
-
-// }
-
 .editorial {
   width: 100%;
   float: left;
