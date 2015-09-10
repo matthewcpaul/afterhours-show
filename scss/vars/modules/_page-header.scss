@@ -30,9 +30,10 @@
   width: 100%;
   background: $black;
   height: 4.5rem;
-  text-align: center;
+  display: none;
+
   @include breakpoint(tight) {
-      text-align: left;
+      display: block;
     }
 
   & ul {
@@ -69,7 +70,7 @@
       margin-left: 2rem;
 
       @include breakpoint(tight) {
-        margin-left: 3rem;
+        margin-left: 4rem;
       }
       @include breakpoint(wide) {
         margin-left: 5rem;
@@ -87,11 +88,43 @@
       }
 
       &.active a {
-        color: $grey;
+        padding-bottom: 8px;
+        border-bottom: 2px solid $pink
       }
     }
   }
 }
+
+.nav-mobile {
+  position: relative;
+  width: 100%;
+  background: $black;
+  height: 4.5rem;
+  display: block;
+  text-align: center;
+
+  @include breakpoint(tight) {
+      display: none;
+    }
+
+  & ul {
+    text-align: center;
+
+    & li {
+      display: inline;
+      margin-left: 8%;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      & a {
+        @extend %nav-anchor;
+      }
+    }
+  }
+}
+
 .nav-wrapper {
   display:inline-block;
   margin: 0 auto;
@@ -123,8 +156,10 @@
   @include breakpoint(tight) {
     max-width: 100px;
     opacity: 1;
-    position: relative;
+    position: absolute;
     top: 21px;
+    left: 50%;
+    margin-left: -50px;
     width: 100%;
     z-index: 1000;
   }
