@@ -18,6 +18,20 @@ var gulp        = require('gulp'),
     deploy      = require('gulp-gh-pages'),
     notify      = require('gulp-notify');
 
+var BROWSERS = [
+  "> 5%",
+  "ie > 0",
+  "Firefox > 0",
+  "Chrome > 0",
+  "Opera > 0",
+  "OperaMobile > 0",
+  "OperaMini > 0",
+  "Safari > 0",
+  "iOS > 0",
+  "Blackberry > 0",
+  "Android > 0"
+];
+
 
 gulp.task('scss', function() {
     var onError = function(err) {
@@ -34,7 +48,9 @@ gulp.task('scss', function() {
     .pipe(plumber({errorHandler: onError}))
     .pipe(sass())
     .pipe(size({ gzip: true, showFiles: true }))
-    .pipe(prefix())
+    .pipe(prefix({
+      browsers: BROWSERS
+    }))
     .pipe(rename('main.css'))
     .pipe(gulp.dest('dist/css'))
     .pipe(reload({stream:true}))
@@ -85,7 +101,7 @@ gulp.task('minify-html', function() {
 });
 
 gulp.task('jshint', function() {
-  gulp.src('js/*.js')
+  gulp.src(['js/*.js', '*.json'])
     .pipe(jshint())
     .pipe(jshint.reporter('default'));
 });
