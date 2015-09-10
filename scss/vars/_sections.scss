@@ -129,12 +129,16 @@ section {
 
 .partners-list_list-item {
   display: block;
-  width: 48%;
+  width: 40%;
   padding: 1rem 0;
 
-  @media screen and (min-width: 425px){
-    max-width: 28%;
+  @include breakpoint(tight) {
+    width: 20%;
   }
+
+  // @media screen and (min-width: 425px){
+  //   max-width: 28%;
+  // }
 }
 
 .partner-logo {
