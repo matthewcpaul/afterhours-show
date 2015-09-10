@@ -16,6 +16,30 @@
   z-index: 1;
 }
 
+%css-half-circle-top {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 12px;
+  border: 2px solid $white;
+  border-radius: 0 0 100px 100px;
+  left: -13px;
+  top: -26px;
+  z-index: 2;
+}
+
+%css-half-circle-bottom {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 12px;
+  border: 2px solid $white;
+  border-radius: 100px 100px 0 0;
+  left: -13px;
+  top: -39px;
+  z-index: 2;
+}
+
 %time {
   @extend %ms0-sans;
   position: relative;
@@ -39,6 +63,12 @@
   }
 }
 
+.section_04 {
+  .page-wrapper::before {
+    @extend %css-half-circle-top;
+  }
+}
+
 .page-wrapper {
   position: relative;
   &::after {
@@ -49,6 +79,10 @@
 .section_05 {
   .page-wrapper {
     position: relative;
+    &::before {
+      @extend %css-half-circle-bottom;
+    }
+
     &::after {
       @extend %time;
       content: "9 AM";
