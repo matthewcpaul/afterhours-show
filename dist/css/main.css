@@ -68,6 +68,8 @@ h2, .section-header {
   font-size: 1rem;
   font-weight: 400;
   line-height: 3rem;
+  padding-bottom: -webkit-calc(.5rem - 3px);
+  padding-bottom: -moz-calc(.5rem - 3px);
   padding-bottom: calc(.5rem - 3px);
   padding-top: 1rem;
   color: #ee6ba6; }
@@ -77,6 +79,8 @@ h3 section-number, .section-number {
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 3rem;
+  padding-bottom: -webkit-calc(.5rem - 3px);
+  padding-bottom: -moz-calc(.5rem - 3px);
   padding-bottom: calc(.5rem - 3px);
   padding-top: 1rem;
   color: #ee6ba6; }
@@ -205,26 +209,31 @@ section {
     width: 65%; }
 
 .partners-list {
-  display: -webkit-flex;
   display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
   -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center; }
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .partners-list_list-item {
   display: block;
@@ -242,8 +251,13 @@ section {
   position: relative;
   background: #141416;
   background-image: url("../img/HeroBackground.jpg");
-  background-size: cover;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
   background-position: center;
+  height: -webkit-calc(100vh - 10rem);
+  height: -moz-calc(100vh - 10rem);
   height: calc(100vh - 10rem);
   padding: 0 6%;
   text-align: center; }
@@ -277,6 +291,8 @@ section {
         padding-left: 6%; } }
     @media only screen and (min-width: 64.5rem) {
       .nav-main ul {
+        padding-left: -webkit-calc(9rem + 4px);
+        padding-left: -moz-calc(9rem + 4px);
         padding-left: calc(9rem + 4px); } }
     .nav-main ul:last-child {
       float: left;
@@ -288,6 +304,8 @@ section {
           padding-right: 6%; } }
       @media only screen and (min-width: 64.5rem) {
         .nav-main ul:last-child {
+          padding-right: -webkit-calc(9rem + 4px);
+          padding-right: -moz-calc(9rem + 4px);
           padding-right: calc(9rem + 4px); } }
     .nav-main ul li {
       display: block;
@@ -381,26 +399,31 @@ section {
   padding-bottom: 1rem; }
 
 .judge_list {
-  display: -webkit-flex;
   display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
   -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center; }
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .judge_list-item {
   width: 48%; }
@@ -425,7 +448,9 @@ section {
   left: -13px;
   bottom: -38px;
   border: 2px solid #ee6ba6;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
   width: 24px;
   height: 24px;
   z-index: 1; }
