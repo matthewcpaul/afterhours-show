@@ -204,7 +204,7 @@ section {
         margin-right: 0; } }
   .editorial .editorial-img {
     background-color: white;
-    display: inline-block;
+    display: block;
     margin-top: 20px;
     padding: 6%;
     width: 65%; }
