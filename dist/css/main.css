@@ -238,11 +238,15 @@ section {
 
 .partners-list_list-item {
   display: block;
-  width: 40%;
+  width: 44%;
   padding: 1rem 0; }
+  .partners-list_list-item a img {
+    max-height: 6rem; }
   @media only screen and (min-width: 46rem) {
     .partners-list_list-item {
-      width: 20%; } }
+      width: 21%; }
+      .partners-list_list-item a img {
+        max-height: 7rem; } }
 
 .button-right {
   float: right;
