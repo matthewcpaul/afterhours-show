@@ -2,22 +2,44 @@
 // Module: Page Header
 // -------------------------------------------------
 
+header {
+  display: block;
+  width: 100%;
+  background: $black;
+  height: 82px;
+  padding-top: 43px;
+
+  & .page-wrapper::after {
+    display: none;
+  }
+}
+
+.wordmark {
+  background: url("../img/ah-wordmark.png");
+  background-size: cover;
+  height: 39px;
+  width: 300px;
+  text-indent: -99999px;
+  overflow: hidden;
+}
+
+
+
 .hero {
   position: relative;
   background: $black;
   // background-image: url("../img/HeroBackground.jpg");
   background-size: cover;
   background-position: center;
-  height: calc(100vh - 10rem);
+  height: calc(40vh);
   padding: 0 6%;
   text-align: center;
 }
 
 .hero-img {
   height: auto;
-  width: 100%;
-  max-width: 700px;
-  margin: auto;
+  width: 16rem;
+  // margin: auto;
   position: absolute;
   top: 0;
   bottom: 0;

@@ -53,15 +53,6 @@
 
 // Timeline Styles
 
-.section_01 {
-  .page-wrapper {
-    &::before {
-      @extend %time;
-      content: "5 PM";
-      top: -10px;
-    }
-  }
-}
 
 .section_04 {
   .page-wrapper::before {
@@ -91,7 +82,7 @@
   }
 }
 
-.nav-main, .nav-mobile, .section_05, .page-footer {
+.nav-main, .nav-mobile, .section_05, .page-footer, header {
   .page-wrapper {
     &::after {
       border: none;
