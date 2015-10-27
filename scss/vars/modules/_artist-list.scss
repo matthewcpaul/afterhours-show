@@ -1,0 +1,28 @@
+// --------------------------------------------------
+// Module: Artist List
+// -------------------------------------------------
+
+.artist_name {
+  @extend %ms2;
+  display: block;
+  padding-top: 0;
+  padding-bottom: 1.5rem;
+}
+
+.artist_social-list {
+    margin-bottom: 1.5rem;
+    position: relative;
+    top: -4px;
+
+  li:first-of-type {
+    @extend %ms-1;
+    text-transform: uppercase;
+    padding-bottom: .125rem;
+  }
+
+  .judge_social-link {
+    @extend %base-anchor;
+    font-family: 'Gentium Book Basic', serif;
+    padding-top: .5rem;
+  }
+}
