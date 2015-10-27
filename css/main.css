@@ -66,7 +66,7 @@ h4 {
   padding-bottom: .8rem;
   padding-top: .75rem; }
 
-.judge_social-list li:first-of-type {
+.judge_social-list li:first-of-type, .artist_social-list li:first-of-type {
   font-family: 'Montserrat', Helvetica, sans-serif;
   font-size: .875rem;
   color: #ee6ba6; }
@@ -82,7 +82,7 @@ h3 section-number, .section-number {
   padding-top: 1rem;
   color: #ee6ba6; }
 
-h3, .judge_name {
+h3, .judge_name, .artist_name {
   font-family: 'Montserrat', Helvetica, sans-serif;
   font-weight: 700;
   font-size: 1.5625rem;
@@ -101,14 +101,14 @@ h3, .judge_name {
     padding-bottom: 8px;
     border-bottom: 2px solid #ee6ba6; }
 
-a.inline-link:hover, .page-footer_link:hover, .judge_social-list .judge_social-link:hover {
+a.inline-link:hover, .page-footer_link:hover, .judge_social-list .judge_social-link:hover, .artist_social-list .judge_social-link:hover {
   color: #ee6ba6;
   text-decoration: underline; }
 
-a.inline-link, .page-footer_link, .judge_social-list .judge_social-link {
+a.inline-link, .page-footer_link, .judge_social-list .judge_social-link, .artist_social-list .judge_social-link {
   color: #141416;
   text-decoration: underline; }
-  a.inline-link:active, .page-footer_link:active, .judge_social-list .judge_social-link:active {
+  a.inline-link:active, .page-footer_link:active, .judge_social-list .judge_social-link:active, .artist_social-list .judge_social-link:active {
     color: #cc3387;
     border-color: #cc3387; }
 
@@ -252,7 +252,7 @@ section {
 .partners-list_list-item {
   display: block;
   width: 44%;
-  padding: 1rem 0; }
+  padding: 1.5rem 0; }
   .partners-list_list-item a img {
     max-height: 6rem; }
   @media only screen and (min-width: 46rem) {
@@ -506,6 +506,22 @@ header {
     text-transform: uppercase;
     padding-bottom: .125rem; }
   .judge_social-list .judge_social-link {
+    font-family: 'Gentium Book Basic', serif;
+    padding-top: .5rem; }
+
+.artist_name {
+  display: block;
+  padding-top: 0;
+  padding-bottom: 1.5rem; }
+
+.artist_social-list {
+  margin-bottom: 1.5rem;
+  position: relative;
+  top: -4px; }
+  .artist_social-list li:first-of-type {
+    text-transform: uppercase;
+    padding-bottom: .125rem; }
+  .artist_social-list .judge_social-link {
     font-family: 'Gentium Book Basic', serif;
     padding-top: .5rem; }
 
