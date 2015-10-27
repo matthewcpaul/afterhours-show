@@ -53,21 +53,12 @@
 
 // Timeline Styles
 
-.section_01 {
-  .page-wrapper {
-    &::before {
-      @extend %time;
-      content: "5 PM";
-      top: -10px;
-    }
-  }
-}
 
-.section_04 {
-  .page-wrapper::before {
-    @extend %css-half-circle-top;
-  }
-}
+// .section_04 {
+//   .page-wrapper::before {
+//     @extend %css-half-circle-top;
+//   }
+// }
 
 .page-wrapper {
   position: relative;
@@ -76,22 +67,22 @@
   }
 }
 
-.section_05 {
-  .page-wrapper {
-    position: relative;
-    &::before {
-      @extend %css-half-circle-bottom;
-    }
+// .section_05 {
+//   .page-wrapper {
+//     position: relative;
+//     &::before {
+//       @extend %css-half-circle-bottom;
+//     }
 
-    &::after {
-      @extend %time;
-      content: "9 AM";
-      bottom: -10px;
-    }
-  }
-}
+//     &::after {
+//       @extend %time;
+//       content: "9 AM";
+//       bottom: -10px;
+//     }
+//   }
+// }
 
-.nav-main, .nav-mobile, .section_05, .page-footer {
+.nav-main, .nav-mobile, .section_end, .page-footer, header {
   .page-wrapper {
     &::after {
       border: none;

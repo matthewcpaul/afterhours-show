@@ -36,7 +36,7 @@ table {
   border-spacing: 0; }
 
 .grey-section {
-  background-color: #f5f5f5; }
+  background-color: #f7f7f7; }
 
 .pink-section {
   background-color: #ee6ba6; }
@@ -50,28 +50,25 @@ p {
   padding-bottom: 1.125rem;
   padding-top: .375rem; }
 
-h2, .section-header {
+h2 {
   font-family: 'Montserrat', Helvetica, sans-serif;
-  font-size: 2.4375rem;
+  font-size: 3.815rem;
   font-weight: 700;
-  line-height: 3rem;
-  padding-bottom: 2.5rem;
-  padding-top: 2.125rem; }
+  line-height: 4.5rem;
+  padding-bottom: 2.25rem;
+  padding-top: .875rem; }
 
-.judge_social-list li:first-of-type {
+h4 {
   font-family: 'Montserrat', Helvetica, sans-serif;
-  font-size: .875rem;
-  color: #ee6ba6; }
-
-.section_01 .page-wrapper::before, .section_05 .page-wrapper::after {
-  font-family: 'Montserrat', Helvetica, sans-serif;
-  font-size: 1rem;
+  font-size: 1.953rem;
   font-weight: 400;
   line-height: 3rem;
-  padding-bottom: -webkit-calc(.5rem - 3px);
-  padding-bottom: -moz-calc(.5rem - 3px);
-  padding-bottom: calc(.5rem - 3px);
-  padding-top: 1rem;
+  padding-bottom: .8rem;
+  padding-top: .75rem; }
+
+.judge_social-list li:first-of-type, .artist_social-list li:first-of-type {
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-size: .875rem;
   color: #ee6ba6; }
 
 h3 section-number, .section-number {
@@ -85,7 +82,7 @@ h3 section-number, .section-number {
   padding-top: 1rem;
   color: #ee6ba6; }
 
-h3, .judge_name {
+h3, .judge_name, .artist_name {
   font-family: 'Montserrat', Helvetica, sans-serif;
   font-weight: 700;
   font-size: 1.5625rem;
@@ -104,13 +101,16 @@ h3, .judge_name {
     padding-bottom: 8px;
     border-bottom: 2px solid #ee6ba6; }
 
-.page-footer_link, .judge_social-list .judge_social-link {
-  color: #141416;
-  text-decoration: underline; }
-
-.judge_social-list .judge_social-link:hover {
+a.inline-link:hover, .page-footer_link:hover, .judge_social-list .judge_social-link:hover, .artist_social-list .judge_social-link:hover {
   color: #ee6ba6;
   text-decoration: underline; }
+
+a.inline-link, .page-footer_link, .judge_social-list .judge_social-link, .artist_social-list .judge_social-link {
+  color: #141416;
+  text-decoration: underline; }
+  a.inline-link:active, .page-footer_link:active, .judge_social-list .judge_social-link:active, .artist_social-list .judge_social-link:active {
+    color: #cc3387;
+    border-color: #cc3387; }
 
 .editorial-button {
   -webkit-appearance: none;
@@ -129,6 +129,19 @@ h3, .judge_name {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+a.inline-link {
+  color: #ee6ba6;
+  text-decoration: none; }
+
+a.large-link {
+  color: #ee6ba6;
+  text-decoration: none; }
+  a.large-link:hover {
+    border-bottom: 2px solid #ee6ba6; }
+  a.large-link:active {
+    color: #cc3387;
+    border-color: #cc3387; }
 
 ::-moz-selection {
   background: #ee6ba6;
@@ -152,6 +165,15 @@ body {
     background-color: #ffffff;
     color: #ee6ba6; }
 
+.white-section .section-content:first-child {
+  padding-top: 3rem; }
+.white-section .section-content:last-child {
+  padding-bottom: 3rem; }
+
+.grey-section .section-content {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem; }
+
 .page-wrapper {
   max-width: 74rem;
   margin: 0 6%; }
@@ -160,27 +182,18 @@ body {
       margin: 0 auto; } }
 
 .section-content {
-  padding: 1.5rem 0 2rem 6%;
+  padding-left: 6%;
   overflow: auto;
   border-left: 2px solid #ee6ba6; }
-  @media only screen and (min-width: 46rem) {
-    .section-content {
-      padding: 1.5rem 0 7.5rem 6%; } }
   @media only screen and (min-width: 64.5rem) {
     .section-content {
-      padding: 1.5rem 9rem 7.5rem 9rem; } }
-  @media only screen and (min-width: 84rem) {
-    .section-content {
-      padding-left: 9rem;
-      padding-right: 9rem; } }
+      padding: 0 9rem; } }
 
-.section_04 {
-  color: #ffffff; }
-  .section_04 .section-content {
-    border-left: 2px solid #ffffff; }
-  .section_04 .section-number {
-    color: #ffffff;
-    border-bottom: 2px solid #ffffff; }
+.inner-wrapper {
+  padding: 0 0 0 6%; }
+  @media only screen and (min-width: 64.5rem) {
+    .inner-wrapper {
+      padding: 0 9rem; } }
 
 section {
   position: relative;
@@ -200,7 +213,7 @@ section {
       margin-right: 4%;
       float: left;
       clear: none; }
-      .editorial:nth-child(even) {
+      .editorial:nth-child(odd) {
         margin-right: 0; } }
   .editorial .editorial-img {
     background-color: white;
@@ -239,7 +252,7 @@ section {
 .partners-list_list-item {
   display: block;
   width: 44%;
-  padding: 1rem 0; }
+  padding: 1.5rem 0; }
   .partners-list_list-item a img {
     max-height: 6rem; }
   @media only screen and (min-width: 46rem) {
@@ -252,6 +265,26 @@ section {
   float: right;
   margin-right: 0; }
 
+header {
+  display: block;
+  width: 100%;
+  background: #141416;
+  height: 82px;
+  padding-top: 43px; }
+  header .page-wrapper::after {
+    display: none; }
+
+.wordmark {
+  background: url("../img/ah-wordmark.png");
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  height: 39px;
+  width: 300px;
+  text-indent: -99999px;
+  overflow: hidden; }
+
 .hero {
   position: relative;
   background: #141416;
@@ -260,16 +293,15 @@ section {
        -o-background-size: cover;
           background-size: cover;
   background-position: center;
-  height: -webkit-calc(100vh - 10rem);
-  height: -moz-calc(100vh - 10rem);
-  height: calc(100vh - 10rem);
+  height: -webkit-calc(60vh);
+  height: -moz-calc(60vh);
+  height: calc(60vh);
   padding: 0 6%;
   text-align: center; }
 
 .hero-img {
   height: auto;
-  width: 100%;
-  max-width: 700px;
+  width: 60%;
   margin: auto;
   position: absolute;
   top: 0;
@@ -385,7 +417,7 @@ section {
       z-index: 1000; } }
 
 .page-footer {
-  background-color: #ffffff;
+  background-color: #f7f7f7;
   padding: 1.5rem 0; }
   .page-footer .page-wrapper::after {
     width: 0;
@@ -457,7 +489,8 @@ section {
   -webkit-align-items: center;
      -moz-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin-top: 1.5rem; }
 
 .judge_list-item {
   width: 48%; }
@@ -476,6 +509,22 @@ section {
     font-family: 'Gentium Book Basic', serif;
     padding-top: .5rem; }
 
+.artist_name {
+  display: block;
+  padding-top: 0;
+  padding-bottom: 1.5rem; }
+
+.artist_social-list {
+  margin-bottom: 1.5rem;
+  position: relative;
+  top: -4px; }
+  .artist_social-list li:first-of-type {
+    text-transform: uppercase;
+    padding-bottom: .125rem; }
+  .artist_social-list .judge_social-link {
+    font-family: 'Gentium Book Basic', serif;
+    padding-top: .5rem; }
+
 .page-wrapper::after {
   content: "";
   position: absolute;
@@ -489,55 +538,11 @@ section {
   height: 24px;
   z-index: 1; }
 
-.section_04 .page-wrapper::before {
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 12px;
-  border: 2px solid #ffffff;
-  -webkit-border-radius: 0 0 100px 100px;
-     -moz-border-radius: 0 0 100px 100px;
-          border-radius: 0 0 100px 100px;
-  left: -13px;
-  top: -26px;
-  z-index: 2; }
-
-.section_05 .page-wrapper::before {
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 12px;
-  border: 2px solid #ffffff;
-  -webkit-border-radius: 100px 100px 0 0;
-     -moz-border-radius: 100px 100px 0 0;
-          border-radius: 100px 100px 0 0;
-  left: -13px;
-  top: -39px;
-  z-index: 2; }
-
-.section_01 .page-wrapper::before, .section_05 .page-wrapper::after {
-  position: relative;
-  left: -17px; }
-  @media only screen and (min-width: 46rem) {
-    .section_01 .page-wrapper::before, .section_05 .page-wrapper::after {
-      font-size: 1.25rem;
-      left: -23px; } }
-
-.section_01 .page-wrapper::before {
-  content: "5 PM";
-  top: -10px; }
-
 .page-wrapper {
   position: relative; }
 
-.section_05 .page-wrapper {
-  position: relative; }
-  .section_05 .page-wrapper::after {
-    content: "9 AM";
-    bottom: -10px; }
-
-.nav-main .page-wrapper::after, .nav-mobile .page-wrapper::after, .section_05 .page-wrapper::after, .page-footer .page-wrapper::after {
+.nav-main .page-wrapper::after, .nav-mobile .page-wrapper::after, .section_end .page-wrapper::after, .page-footer .page-wrapper::after, header .page-wrapper::after {
   border: none; }
 
 html {
-  background: #f5f5f5; }
+  background: #f7f7f7; }

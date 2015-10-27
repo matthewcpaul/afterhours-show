@@ -6,11 +6,23 @@
 //
 // These should be as modular as possible for reuse
 
+.white-section .section-content {
+  &:first-child {
+    padding-top: 3rem;
+  }
+  &:last-child {
+    padding-bottom: 3rem;
+  }
+}
+
+.grey-section .section-content {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .page-wrapper{
   max-width: 74rem;
   margin: 0 6%;
-
-  // margin: 0 1.5rem;
 
   @include breakpoint(max-width) {
     margin: 0 auto;
@@ -19,37 +31,37 @@
 
 // PAGE SECTIONS
 .section-content {
-  padding: 1.5rem 0 2rem 6%;
+  padding-left: 6%;
   overflow: auto;
   border-left: 2px solid $pink;
 
-  @include breakpoint(tight) {
-    padding: 1.5rem 0 7.5rem 6%;
-  }
-
   @include breakpoint(wide) {
-    padding: 1.5rem 9rem 7.5rem 9rem;
+    padding: 0 9rem;
   }
 
-  @include breakpoint(max-width) {
-    padding-left: 9rem;
-    padding-right: 9rem;
-  }
   // @include baseline;
 }
 
-.section_04 {
-   color: $white;
+.inner-wrapper {
+  padding: 0 0 0 6%;
 
-  .section-content {
-    border-left: 2px solid $white;
-  }
-
-  .section-number {
-    color: $white;
-    border-bottom: 2px solid $white;
+  @include breakpoint(wide) {
+    padding: 0 9rem;
   }
 }
+
+// .section_04 {
+//    color: $white;
+
+//   .section-content {
+//     border-left: 2px solid $white;
+//   }
+
+//   .section-number {
+//     color: $white;
+//     border-bottom: 2px solid $white;
+//   }
+// }
 
 // PAGE SECTIONS
 section {
@@ -95,7 +107,7 @@ section {
 .partners-list_list-item {
   display: block;
   width: 44%;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
 
   & a img {
     max-height: 6rem;
