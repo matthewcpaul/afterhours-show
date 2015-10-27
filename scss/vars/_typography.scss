@@ -91,14 +91,23 @@
   }
 }
 
-%base-anchor {
-  color: $black;
-  text-decoration: underline;
-}
-
 %base-hover {
   color: $pink;
   text-decoration: underline;
+}
+
+%base-anchor {
+  color: $black;
+  text-decoration: underline;
+
+  &:hover {
+      @extend %base-hover;
+  }
+
+  &:active {
+    color: $dark-pink;
+    border-color: $dark-pink;
+  }
 }
 
 %button-style {
@@ -143,13 +152,19 @@ h4 {
   @extend %h4;
 }
 
-a {
+a.inline-link {
+  @extend %base-anchor;
+  color: $pink;
+  text-decoration: none;
+}
+
+a.large-link {
   color: $pink;
   text-decoration: none;
   // padding-bottom: .125rem;
 
   &:hover {
-    border-bottom: 1px solid $pink;
+    border-bottom: 2px solid $pink;
   }
 
   &:active {
