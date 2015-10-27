@@ -71,17 +71,6 @@ h4 {
   font-size: .875rem;
   color: #ee6ba6; }
 
-.section_05 .page-wrapper::after {
-  font-family: 'Montserrat', Helvetica, sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 3rem;
-  padding-bottom: -webkit-calc(.5rem - 3px);
-  padding-bottom: -moz-calc(.5rem - 3px);
-  padding-bottom: calc(.5rem - 3px);
-  padding-top: 1rem;
-  color: #ee6ba6; }
-
 h3 section-number, .section-number {
   font-family: 'Montserrat', Helvetica, sans-serif;
   font-size: 1.25rem;
@@ -112,13 +101,16 @@ h3, .judge_name {
     padding-bottom: 8px;
     border-bottom: 2px solid #ee6ba6; }
 
-.page-footer_link, .judge_social-list .judge_social-link {
-  color: #141416;
-  text-decoration: underline; }
-
-.judge_social-list .judge_social-link:hover {
+a.inline-link:hover, .page-footer_link:hover, .judge_social-list .judge_social-link:hover {
   color: #ee6ba6;
   text-decoration: underline; }
+
+a.inline-link, .page-footer_link, .judge_social-list .judge_social-link {
+  color: #141416;
+  text-decoration: underline; }
+  a.inline-link:active, .page-footer_link:active, .judge_social-list .judge_social-link:active {
+    color: #cc3387;
+    border-color: #cc3387; }
 
 .editorial-button {
   -webkit-appearance: none;
@@ -138,12 +130,16 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-a {
+a.inline-link {
   color: #ee6ba6;
   text-decoration: none; }
-  a:hover {
-    border-bottom: 1px solid #ee6ba6; }
-  a:active {
+
+a.large-link {
+  color: #ee6ba6;
+  text-decoration: none; }
+  a.large-link:hover {
+    border-bottom: 2px solid #ee6ba6; }
+  a.large-link:active {
     color: #cc3387;
     border-color: #cc3387; }
 
@@ -198,14 +194,6 @@ a {
   @media only screen and (min-width: 64.5rem) {
     .inner-wrapper {
       padding: 0 9rem; } }
-
-.section_04 {
-  color: #ffffff; }
-  .section_04 .section-content {
-    border-left: 2px solid #ffffff; }
-  .section_04 .section-number {
-    color: #ffffff;
-    border-bottom: 2px solid #ffffff; }
 
 section {
   position: relative;
@@ -305,15 +293,16 @@ header {
        -o-background-size: cover;
           background-size: cover;
   background-position: center;
-  height: -webkit-calc(40vh);
-  height: -moz-calc(40vh);
-  height: calc(40vh);
+  height: -webkit-calc(60vh);
+  height: -moz-calc(60vh);
+  height: calc(60vh);
   padding: 0 6%;
   text-align: center; }
 
 .hero-img {
   height: auto;
-  width: 16rem;
+  width: 60%;
+  margin: auto;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -428,7 +417,7 @@ header {
       z-index: 1000; } }
 
 .page-footer {
-  background-color: #ffffff;
+  background-color: #f7f7f7;
   padding: 1.5rem 0; }
   .page-footer .page-wrapper::after {
     width: 0;
@@ -500,7 +489,8 @@ header {
   -webkit-align-items: center;
      -moz-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin-top: 1.5rem; }
 
 .judge_list-item {
   width: 48%; }
@@ -532,50 +522,10 @@ header {
   height: 24px;
   z-index: 1; }
 
-.section_04 .page-wrapper::before {
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 12px;
-  border: 2px solid #ffffff;
-  -webkit-border-radius: 0 0 100px 100px;
-     -moz-border-radius: 0 0 100px 100px;
-          border-radius: 0 0 100px 100px;
-  left: -13px;
-  top: -26px;
-  z-index: 2; }
-
-.section_05 .page-wrapper::before {
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 12px;
-  border: 2px solid #ffffff;
-  -webkit-border-radius: 100px 100px 0 0;
-     -moz-border-radius: 100px 100px 0 0;
-          border-radius: 100px 100px 0 0;
-  left: -13px;
-  top: -39px;
-  z-index: 2; }
-
-.section_05 .page-wrapper::after {
-  position: relative;
-  left: -17px; }
-  @media only screen and (min-width: 46rem) {
-    .section_05 .page-wrapper::after {
-      font-size: 1.25rem;
-      left: -23px; } }
-
 .page-wrapper {
   position: relative; }
 
-.section_05 .page-wrapper {
-  position: relative; }
-  .section_05 .page-wrapper::after {
-    content: "9 AM";
-    bottom: -10px; }
-
-.nav-main .page-wrapper::after, .nav-mobile .page-wrapper::after, .section_05 .page-wrapper::after, .page-footer .page-wrapper::after, header .page-wrapper::after {
+.nav-main .page-wrapper::after, .nav-mobile .page-wrapper::after, .section_end .page-wrapper::after, .page-footer .page-wrapper::after, header .page-wrapper::after {
   border: none; }
 
 html {
