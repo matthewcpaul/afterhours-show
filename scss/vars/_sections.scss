@@ -6,20 +6,6 @@
 //
 // These should be as modular as possible for reuse
 
-.white-section .section-content {
-  &:first-child {
-    padding-top: 3rem;
-  }
-  &:last-child {
-    padding-bottom: 3rem;
-  }
-}
-
-.grey-section .section-content {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
 .page-wrapper{
   max-width: 74rem;
   margin: 0 6%;
@@ -66,7 +52,7 @@
 // PAGE SECTIONS
 section {
   position: relative;
-  padding: 1.5rem 0;
+  padding: 0;
   background: $white;
 
   & #sec-1, #sec-2, #sec-3, #sec-4 {
@@ -75,6 +61,27 @@ section {
   }
 
   // @include baseline;
+}
+
+.white-section {
+  padding-bottom: 1.5rem;
+}
+.grey-section {
+  padding-top: 1.5rem;
+}
+
+.white-section .section-content {
+  &:first-child {
+    padding-top: 3rem;
+  }
+  &:last-child {
+    padding-bottom: 3rem;
+  }
+}
+
+.grey-section .section-content {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .editorial {
