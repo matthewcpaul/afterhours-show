@@ -292,17 +292,6 @@ header {
   header .page-wrapper::after {
     display: none; }
 
-.wordmark {
-  background: url("../img/ah-wordmark.png");
-  -webkit-background-size: cover;
-     -moz-background-size: cover;
-       -o-background-size: cover;
-          background-size: cover;
-  height: 39px;
-  width: 300px;
-  text-indent: -99999px;
-  overflow: hidden; }
-
 .hero {
   position: relative;
   background: #141416;
@@ -311,21 +300,37 @@ header {
        -o-background-size: cover;
           background-size: cover;
   background-position: center;
-  height: -webkit-calc(60vh);
-  height: -moz-calc(60vh);
-  height: calc(60vh);
+  height: -webkit-calc(20vh);
+  height: -moz-calc(20vh);
+  height: calc(20vh);
   padding: 0 6%;
   text-align: center; }
+  @media only screen and (min-width: 46rem) {
+    .hero {
+      height: -webkit-calc(40vh);
+      height: -moz-calc(40vh);
+      height: calc(40vh); } }
+  @media only screen and (min-width: 64.5rem) {
+    .hero {
+      height: -webkit-calc(60vh);
+      height: -moz-calc(60vh);
+      height: calc(60vh); } }
 
 .hero-img {
   height: auto;
-  width: 60%;
+  width: 80%;
   margin: auto;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0; }
+  @media only screen and (min-width: 46rem) {
+    .hero-img {
+      width: 70%; } }
+  @media only screen and (min-width: 64.5rem) {
+    .hero-img {
+      width: 60%; } }
 
 .nav-main {
   position: relative;
