@@ -165,15 +165,6 @@ a.large-link {
     background-color: #ffffff;
     color: #ee6ba6; }
 
-.white-section .section-content:first-child {
-  padding-top: 3rem; }
-.white-section .section-content:last-child {
-  padding-bottom: 3rem; }
-
-.grey-section .section-content {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem; }
-
 .page-wrapper {
   max-width: 74rem;
   margin: 0 6%; }
@@ -197,11 +188,26 @@ a.large-link {
 
 section {
   position: relative;
-  padding: 1.5rem 0;
+  padding: 0;
   background: #ffffff; }
   section #sec-1, section #sec-2, section #sec-3, section #sec-4 {
     position: absolute;
     top: -4.4rem; }
+
+.white-section {
+  padding-bottom: 1.5rem; }
+
+.grey-section {
+  padding-top: 1.5rem; }
+
+.white-section .section-content:first-child {
+  padding-top: 3rem; }
+.white-section .section-content:last-child {
+  padding-bottom: 3rem; }
+
+.grey-section .section-content {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem; }
 
 .editorial {
   width: 100%;
@@ -541,7 +547,7 @@ header {
 .page-wrapper {
   position: relative; }
 
-.nav-main .page-wrapper::after, .nav-mobile .page-wrapper::after, .section_end .page-wrapper::after, .page-footer .page-wrapper::after, header .page-wrapper::after {
+.nav-main .page-wrapper::after, .nav-mobile .page-wrapper::after, .section_end .page-wrapper::after, .page-footer .page-wrapper::after, header .page-wrapper::after, .grey-section .page-wrapper::after {
   border: none; }
 
 html {
