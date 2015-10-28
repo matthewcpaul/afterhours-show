@@ -52,19 +52,27 @@ p {
 
 h2 {
   font-family: 'Montserrat', Helvetica, sans-serif;
-  font-size: 3.815rem;
+  font-size: 3.052rem;
   font-weight: 700;
-  line-height: 4.5rem;
+  line-height: 3.25rem;
   padding-bottom: 2.25rem;
   padding-top: .875rem; }
+  @media only screen and (min-width: 46rem) {
+    h2 {
+      font-size: 3.815rem;
+      line-height: 4.5rem; } }
 
 h4 {
   font-family: 'Montserrat', Helvetica, sans-serif;
-  font-size: 1.953rem;
+  font-size: 1.563rem;
+  line-height: 2rem;
   font-weight: 400;
-  line-height: 3rem;
   padding-bottom: .8rem;
   padding-top: .75rem; }
+  @media only screen and (min-width: 46rem) {
+    h4 {
+      font-size: 1.953rem;
+      line-height: 3rem; } }
 
 .judge_social-list li:first-of-type, .artist_social-list li:first-of-type {
   font-family: 'Montserrat', Helvetica, sans-serif;
@@ -85,10 +93,14 @@ h3 section-number, .section-number {
 h3, .judge_name, .artist_name {
   font-family: 'Montserrat', Helvetica, sans-serif;
   font-weight: 700;
-  font-size: 1.5625rem;
+  font-size: 1.25rem;
   line-height: 1.5rem;
   padding-bottom: 0;
   padding-top: 1.7rem; }
+  @media only screen and (min-width: 46rem) {
+    h3, .judge_name, .artist_name {
+      font-size: 1.5625rem;
+      line-height: 1.75rem; } }
 
 .nav-main ul li a, .nav-mobile ul li a {
   font-family: 'Montserrat', Helvetica, sans-serif;
