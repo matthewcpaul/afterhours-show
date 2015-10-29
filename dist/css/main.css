@@ -105,13 +105,16 @@ h3, .judge_name, .artist_name {
 .nav-main ul li a, .nav-mobile ul li a {
   font-family: 'Montserrat', Helvetica, sans-serif;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: .875rem;
   line-height: 4.5rem;
   color: #ee6ba6;
   text-decoration: none; }
   .nav-main ul li a:hover, .nav-mobile ul li a:hover {
     padding-bottom: 8px;
     border-bottom: 2px solid #ee6ba6; }
+  @media only screen and (min-width: 46rem) {
+    .nav-main ul li a, .nav-mobile ul li a {
+      font-size: 1rem; } }
 
 a.inline-link:hover, .page-footer_link:hover, .judge_social-list .judge_social-link:hover, .artist_social-list .judge_social-link:hover {
   color: #ee6ba6;
@@ -318,8 +321,9 @@ header {
 
 .hero-img {
   height: auto;
-  width: 80%;
+  width: 90%;
   margin: auto;
+  padding-top: 2.5rem;
   position: absolute;
   top: 0;
   bottom: 0;
